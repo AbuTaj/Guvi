@@ -13,6 +13,7 @@ public class StringMul {
 		String s2 = s.next();
 		int b = Integer.parseInt(s2);
 		int rs = a * b;
+		rs = Math.abs(rs);
 		System.out.println("The Multiplication of the Number is : " + Integer.toString(rs));
 
 	}
