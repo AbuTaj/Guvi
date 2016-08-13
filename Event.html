@@ -1,0 +1,56 @@
+<html>
+<head><center>Events</center>
+<title>String Operations</title>
+</head>
+<body>
+<script language = "JavaScript">
+function concat() {
+with(document.Simple) {
+var x=first.value;
+var y=second.value;
+res.value = x+y;
+}
+}
+function subStr() {
+with(document.Simple) {
+var x=first.value;
+res.value = x.substr(4,8);
+}
+}
+function subString() {
+with(document.Simple) {
+var x=first.value;
+fourth.value = x.substring(0,3);
+}
+}
+function toLower() {
+with(document.Simple) {
+var x=first.value;
+third.value = x.toLowerCase();
+}
+}
+function toUpper() {
+with(document.Simple) {
+var x=first.value;
+second.value=x.toUpperCase();
+}
+}
+function trm() {
+with(document.Simple) {
+var x=first.value;
+first.value=x.trim();
+}
+}
+</script>
+<form name = "Simple">
+String : Auto Trim : Blur Event :
+<input type = "text" name = first value = "" onblur="trm();"> <BR><BR>
+String : Auto UpperCase : OnFocus :
+<input type = "text"  name = second value = "" onFocus="toUpper();"> <BR><BR>
+String : Auto LowerCase : MouseOverOccurance :
+<input type = "text"  name = third value = "" onMouseOver="toLower();"> <BR><BR>
+String : Auto Substring : MouseOutOccurance :
+<input type = "text"  name = fourth value = "" onMouseOut="subString();"> <BR><BR>
+</form>
+</body>
+</html>
