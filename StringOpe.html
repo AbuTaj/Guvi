@@ -1,0 +1,63 @@
+<html>
+<head><center>String Operations</center>
+<title>String Operations</title>
+</head>
+<body>
+<script language = "JavaScript">
+function concat() {
+with(document.Simple) {
+var x=first.value;
+var y=second.value;
+res.value = x+y;
+}
+}
+function subStr() {
+with(document.Simple) {
+var x=first.value;
+res.value = x.substr(4,8);
+}
+}
+function subString() {
+with(document.Simple) {
+var x=first.value;
+res.value = x.substring(1,3);
+}
+}
+function toLower() {
+with(document.Simple) {
+var x=first.value;
+res.value = x.toLowerCase();
+}
+}
+function toUpper() {
+with(document.Simple) {
+var x=first.value;
+res.value=x.toUpperCase();
+}
+}
+</script>
+
+<form name = "Simple">
+
+First String : 
+<input type = "text" name = first value = ""> <BR><BR>
+
+Second String :
+<input type = "text"  name = second value = ""> <BR><BR>
+
+<input type = button value = "ConCat" onClick = "concat();"> <BR><BR>
+
+<input type = button value = "SubString" onClick = "subString();"> <BR><BR>
+
+<input type = button value = "LowerCase" onClick = "toLower();"> <BR><BR>
+
+<input type = button value = "UpperCase" onClick = "toUpper();"> <BR><BR>
+
+<input type = button value = "SubStr" onClick = "subStr();"> <BR><BR>
+
+Processed String : 
+<input type = "text" name = res value = " "> <BR><BR>
+
+</form>
+</body>
+</html>
