@@ -1,0 +1,39 @@
+<!-- This design is inspired from the simple idea.
+The coding support is referred in http://www.w3schools.com/jsref/jsref_eval.asp -->
+<html>
+<head><center><font face="chiller" color="red" size="12">Simple Calculator</center></head>
+<body>
+<br/>
+<form Name="calc">
+<center><table>
+<tr>
+<td colspan=4><input type=text Name="disp"></td>
+</tr>
+<tr>
+<td><input type=button value="0" OnClick="calc.disp.value+='0'"></td>
+<td><input type=button value="1" OnClick="calc.disp.value+='1'"></td>
+<td><input type=button value="2" OnClick="calc.disp.value+='2'"></td>
+<td><input type=button value="+" OnClick="calc.disp.value+='+'"></td>
+</tr>
+<tr>
+<td><input type=button value="3" OnClick="calc.disp.value+='3'"></td>
+<td><input type=button value="4" OnClick="calc.disp.value+='4'"></td>
+<td><input type=button value="5" OnClick="calc.disp.value+='5'"></td>
+<td><input type=button value="-" OnClick="calc.disp.value+='-'"></td>
+</tr>
+<tr>
+<td><input type=button value="6" OnClick="calc.disp.value+='6'"></td>
+<td><input type=button value="7" OnClick="calc.disp.value+='7'"></td>
+<td><input type=button value="8" OnClick="calc.disp.value+='8'"></td>
+<td><input type=button value="x" OnClick="calc.disp.value+='*'"></td>
+</tr>
+<tr>
+<td><input type=button value="9" OnClick="calc.disp.value+='9'"></td>
+<td><input type=button value="C" OnClick="calc.disp.value=''"></td>
+<td><input type=button value="=" OnClick="calc.disp.value=eval(calc.disp.value)"></td>
+<td><input type=button value="/" OnClick="calc.disp.value+='/'"></td>
+</tr>
+</table></center>
+</form>
+</body>
+</html>
