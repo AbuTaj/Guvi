@@ -1,5 +1,5 @@
 # Created on 02-Sep-2016
-# @author: abu78
+# @author: AbuTaj
 num1 = input('Enter Num 1')
 num2 = input('Enter Num 2')
 num3 = input('Enter Num 3')
