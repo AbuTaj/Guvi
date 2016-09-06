@@ -20,7 +20,6 @@ public class ProperTags {
 				cl += 1;
 			}
 		}
-		System.out.println(op + " " + cl);
 		op /= 2;
 		if (op == cl) {
 			System.out.println("Proper");
